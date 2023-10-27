@@ -1,0 +1,19 @@
+.navbar{
+        padding: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(2, 79, 2);
+}
+.brand{
+        font-size: 30px;
+}
+.navbar-items{
+        display: flex;
+        gap: 2rem;
+}
+.navbar-btns{
+        padding: 10px;
+        width: 100px;
+        cursor: pointer;
+}
