@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
         const [user,setUser] = useState({email:"",password:""})
+        
+        const navigate = useNavigate()
         const handleSubmit = (e) => {
                 e.preventDefault()
+                
                 localStorage.setItem("user",JSON.stringify(user))
+                navigate("/")
                 // localStorage.clear()
         }
         const handleInputChange = (e) => {
