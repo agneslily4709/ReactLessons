@@ -6,7 +6,7 @@ export const Logout = () => {
         useEffect(()=>{
                 if(localStorage.getItem("user"))localStorage.clear()
                 navigate("/login")
-        },[])
+        },[navigate])
   return (
     <div>Logout</div>
   )
