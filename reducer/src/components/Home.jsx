@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Home = () => {
+        const [user,setUser] = useState(null)
         useEffect(()=>{
-
+                let info = localStorage.getItem("user")
+                if(info){
+                        setUser(JSON.parse(info))
+                }
+                console.log(user)
         },[])
   return (
     <div className='container'>
